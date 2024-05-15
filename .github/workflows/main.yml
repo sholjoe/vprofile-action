@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   
 env:
-  AWS_REGION: us-east-2
+  AWS_REGION: us-east-1
   ECR_REPOSITORY: vprofileapp
   EKS_CLUSTER: vprofile-eks
 
@@ -64,3 +64,5 @@ jobs:
           daemon_off: false
           dockerfile: ./Dockerfile
           context: ./
+
+      # the end
